@@ -55,6 +55,7 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
+    color: rgb(53, 53, 53);
 }
 
 .Box {
@@ -92,8 +93,8 @@
     align-items: center;
     /* box-shadow: 0 0 5px black; */
 }   .main--a {
-    color: black;
-    border: 1px solid rgb(0, 0, 0);
+    color: rgb(53, 53, 53);
+    border: 1px solid rgb(53, 53, 53);
     border-radius: 10px;
     padding: 15px 40px;
     transition: transform 0.3s ease 0s, color 0.3s, box-shadow 0.3s;
