@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="Box">
@@ -51,7 +51,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Playfair Display', serif;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -83,7 +83,7 @@
     display: flex;
     align-items: center; justify-content: center;
 }   .h1--sec {
-    color: green;
+    color: rgb(156, 0, 0); 
 }   .main__a {
     display: flex;
     margin-top: 1rem;
