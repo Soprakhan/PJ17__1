@@ -7,19 +7,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="box__btnVBack">
+        <a class="box--btnVBack" href="../index01/index1.html">กลับไปก่อนหน้านี้นะค่ะอิอิ</a>
+    </div>
     <div class="navber">
-        <div class="Texthead"><h2>เลือก"หมวดหมู่"เลยจร้า</h2></div>
+        <div class="Texthead"><h2>เลือก "หมวดหมู่" เลยจร้า</h2></div>
     </div>
     <div class="main">
         <div class="card">
             <div class="card__box">
-                
+                <div class="box__btnView">
+                    <a class="box--btnView" href="../index02/index2.html">
+                        <div class="content">
+                            <h1>prop</h1>
+                        </div>
+                        <div class="img">
+                            <img src="PJ17__IMG.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
             </div>
+        </div>
+        <div class="card">
             <div class="card__box">
-
+                <div class="box__btnView">
+                    <a class="box--btnView" href="../index02/index2.html">
+                        <div class="content">
+                            <h1>anim</h1>
+                        </div>
+                        <div class="img">
+                            <img src="PJ17__IMG2.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
             </div>
+        </div>
+        <div class="card">
             <div class="card__box">
-
+                <div class="box__btnView">
+                    <a class="box--btnView" href="../index02/index2.html">
+                        <div class="content">
+                            <h1>eye</h1>
+                        </div>
+                        <div class="img">
+                            <img src="PJ17__IMG.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -57,31 +91,79 @@
     scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
+    color: var(--Maincolor);
 }
-/* body {
+body {
     overflow: hidden;
-} */
+}
 .navber {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
-    padding: 2rem 0;
+    margin: 1rem 0 0 0;
     font-size: var(--TagASize);
 }
 .main {
-    border: 1px solid rgb(150, 33, 33);
+    /* border: 1px solid rgb(150, 33, 33); */
     height: 83.8vh;
+    display: flex;
 }
 .card {
-    border: 1px solid black;
-    height: 100%;
-    display: flex;
-    padding: 5rem 10%;
+    padding: 5rem 1rem;
+    margin: 0 auto;
 }
 .card__box {
-    display: flex;
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     width: 25vw;
     height: 55vh;
-    margin: 0 1rem
 
+}
+.img {
+    width: 25vw;
+    /* border: 1px solid black; */
+}   .img img {
+    width: 100%;
+}
+.content {
+    text-align: center;
+}
+.box__btnView {
+    display: flex;
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+    justify-content: center;
+}
+.box--btnView {
+    font-size: var(--TagASize);
+    border: 1px solid var(--Maincolor);
+    color: var(--Maincolor);
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease 0s, color 0.3s, box-shadow 0.3s;
+}
+.box--btnView:hover {
+    transform: translateY(-5px);
+    color: #5f0f0f;
+    border: 1px solid #5f0f0f;
+    box-shadow: 0 0 5px #bd1c1c;
+}
+.box__btnVBack {
+    display: flex;
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+    margin-left: 1rem;
+    justify-content: left;
+}
+.box--btnVBack {
+    font-size: var(--TagASize);
+    border: 1px solid var(--Maincolor);
+    color: var(--Maincolor);
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease 0s, color 0.3s, box-shadow 0.3s;
+}
+.box--btnVBack:hover {
+    transform: translateY(-5px);
+    color: #5f0f0f;
+    border: 1px solid #5f0f0f;
+    box-shadow: 0 0 5px #bd1c1c;
 }
