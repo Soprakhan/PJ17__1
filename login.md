@@ -95,6 +95,7 @@ h1 section {
     display: inline-block;
     border-radius: 5px;
     width: 100px;
+    padding: 0 10px;
 }
 .InputBox {
     color: var(--Maincolor);
@@ -104,10 +105,4 @@ h1 section {
 }
 p {
     margin-left: 1rem;
-}
-.InputBox {
-    color: var(--Maincolor);
-    /* border: 1px solid red; */
-    display: flex;
-    justify-content: center;
 }
