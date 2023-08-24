@@ -63,6 +63,10 @@ h1 {
 h1 section {
     color: #bd1c1c;
 }
+.Box{
+    align-items: center;
+    justify-content: center;
+}
 .box__btnView {
     display: flex;
     /* border: 1px solid red; */
@@ -82,4 +86,16 @@ h1 section {
     color: #5f0f0f;
     border: 1px solid #5f0f0f;
     box-shadow: 0 0 5px #bd1c1c;
+}
+.input {
+    justify-content: center;
+    display: inline-block;
+    border-radius: 5px;
+    width: 100px;
+}
+.InputBox {
+    color: var(--Maincolor);
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
 }
