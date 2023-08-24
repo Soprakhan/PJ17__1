@@ -60,14 +60,15 @@
 
 .Box {
     /* border:  1px solid black; */
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    margin: 5% auto;
+    align-items: center;
+
 }
 .Contents_box {
     /* border: 1px solid red; */
-    width: 500px;
-    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +79,6 @@
     padding: 5rem;
     border-radius: 30px;
     width: 500px;
-    /* box-shadow: 0 0 10px black; */
 }   .main--h1 {
     display: flex;
     align-items: center; justify-content: center;
