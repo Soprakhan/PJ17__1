@@ -2,29 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yourname</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="Box">
-        <div class="Contents_box">
-            <div class="baby__box">
-                <b>
-                    <p class="main--p">
-                        Hello, welcome to
-                    </p>
-                    <h1 class="main--h1">
-                        Your <section class="h1--sec">name</section>
-                    </h1>
-                    <div class="main__a">
-                        <a class="main--a" href="index2.html">View to stock</a>
-                    </div>
-                </b>
+        <div class="Box__1 box--btn">
+            <a class="btn--tagA" href="login.html">Login</a>
+        </div>  
+        <div class="Box__2 box--welcome">
+            <div class="contents__box">
+                <p>Hello, Welcome to</p>
+                <h2 class="box--texth2">Your<section>name</section> </h2>
+                <div class="box__btnView">
+                    <a class="box--btnView" href="../index2.html/index2.html">View to stock</a>
+                </div>
             </div>
         </div>
     </div>
@@ -49,56 +42,89 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500&display=swap');
+:root {
+    --Maincolor : #353535;
+    --TagASize : 15px;
+
+}
 * {
-    box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
-    text-decoration: none;
     margin: 0;
     padding: 0;
-    color: rgb(53, 53, 53);
+    box-sizing: border-box;
+    font-family: 'Noto Sans Thai', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
 }
 
 .Box {
-    /* border:  1px solid black; */
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.Contents_box {
+    position: relative;
     /* border: 1px solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 10vh;
 }
-.baby__box {
+.Box__1 {
+    display: flex;
     /* border: 1px solid violet; */
-    text-align: center;
-    padding: 5rem;
-    border-radius: 30px;
-    width: 500px;
-}   .main--h1 {
-    display: flex;
-    align-items: center; justify-content: center;
-}   .h1--sec {
-    color: rgb(156, 0, 0); 
-}   .main__a {
-    display: flex;
-    margin-top: 1rem;
-    /* padding-top: 1rem; */
+    z-index: 999;
+}   .box--btn {
+    justify-content: end;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+.btn--tagA {
+    font-size: var(--TagASize);
+    border: 1px solid var(--Maincolor);
+    color: var(--Maincolor);
+    padding: 5px 10px;
     border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    /* box-shadow: 0 0 5px black; */
-}   .main--a {
-    color: rgb(53, 53, 53);
-    border: 1px solid rgb(53, 53, 53);
-    border-radius: 10px;
-    padding: 15px 40px;
     transition: transform 0.3s ease 0s, color 0.3s, box-shadow 0.3s;
-}   .main--a:hover {
+}
+.btn--tagA:hover {
+    transform: translateY(-5px);
+    color: #5f0f0f;
+    /* border: 1px solid #5f0f0f; */
+    box-shadow: 0 0 5px #bd1c1c;
+}
+
+.Box__2 {
+    position: absolute;
+    /* border: 1px solid brown; */
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+.contents__box {
+    /* border: 1px solid blue; */
+    text-align: center;
+    color: var(--Maincolor);
+}
+.box--texth2 {
+    display: flex;
+    justify-content: center;
+}   .box--texth2 section {
+        color:#8d1919
+}
+
+.box__btnView {
+    display: flex;
+    /* border: 1px solid red; */
+    margin-top: 1rem;
+    justify-content: center;
+}
+.box--btnView {
+    font-size: var(--TagASize);
+    border: 1px solid var(--Maincolor);
+    color: var(--Maincolor);
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease 0s, color 0.3s, box-shadow 0.3s;
+}
+.box--btnView:hover {
     transform: translateY(-5px);
     color: #5f0f0f;
     border: 1px solid #5f0f0f;
