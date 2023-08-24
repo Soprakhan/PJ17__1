@@ -10,7 +10,7 @@
     <div class="Box">
         <h1>ขอเงิน <section>"หน่อย"</section>ข่าบบบ</h1>
         <div class="InputBox">
-            <input class="input" type="text">   มีให้แค่นี้นะ
+            <input class="input" type="text"> <p>มีให้แค่นี้นะ</p>
         </div>
         <div class="box__btnView">
             <a class="box--btnView" href="index01.html">อยากกลับหน้าเดิมก็กดหนูนะ</a>
@@ -95,6 +95,15 @@ h1 section {
     display: inline-block;
     border-radius: 5px;
     width: 100px;
+}
+.InputBox {
+    color: var(--Maincolor);
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+p {
+    margin-left: 1rem;
 }
 .InputBox {
     color: var(--Maincolor);
