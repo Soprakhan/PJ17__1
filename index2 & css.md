@@ -22,21 +22,21 @@
                             <h1>prop</h1>
                         </div>
                         <div class="img">
-                            <img src="PJ17__IMG.jpg" alt="">
+                            <img src="../สินค้า/prop03.1.png" alt="">
                         </div>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card card--1">
             <div class="card__box">
-                <div class="box__btnView">
+                <div class="box__btnView box--1">
                     <a class="box--btnView" href="../index02/index2.html">
                         <div class="content">
                             <h1>anim</h1>
                         </div>
                         <div class="img">
-                            <img src="PJ17__IMG2.jpg" alt="">
+                            <img src="../สินค้า/anim03.png" alt="">
                         </div>
                     </a>
                 </div>
@@ -50,7 +50,7 @@
                             <h1>eye</h1>
                         </div>
                         <div class="img">
-                            <img src="PJ17__IMG.jpg" alt="">
+                            <img src="../สินค้า/eye01.png" alt="">
                         </div>
                     </a>
                 </div>
@@ -134,6 +134,7 @@ body {
 }
 .box--btnView {
     font-size: var(--TagASize);
+    height: 40vh;
     border: 1px solid var(--Maincolor);
     color: var(--Maincolor);
     padding: 10px 15px;
@@ -166,4 +167,8 @@ body {
     color: #5f0f0f;
     border: 1px solid #5f0f0f;
     box-shadow: 0 0 5px #bd1c1c;
+}
+
+.box--1 img {
+    margin-top: 1rem;
 }
